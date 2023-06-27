@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/contato.css">
+    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <title>..:: Aesthetic Apparel ::.. Entre em Contato</title>
+</head>
+
+<body>
+    <!-- Aula 24/04/2023 - HTML -->
+    <!-- Início Menu Responsivo -->
+    <header id="header">
+        <a id="logo" href="#"><img src="./img/logo aleatoria.jpg" alt="Logo Aesthetic Apparel"></a>
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a class="linkMenu" href="index.html">Home</a></li>
+                <li><a class="linkMenu" href="produtos.html">Produtos</a></li>
+                <li><a class="linkMenu" href="streaming.html">#Streaming</a></li>
+                <li><a class="linkMenu" href="contato.html">Contato</a></li>
+                <!-- Atalho para copiar conteúdo > Alt + Shift + Seta para baixo -->
+            </ul>
+        </nav>
+    </header>
+    <!-- Fim Menu Responsivo -->
+    <!-- Início Form Contato -->
+    <div class="contato">
+        <div class="container">
+            <div class="row">                
+                <!-- Início Formulário -->
+                <div class="col-md-6">
+                    <div class="form_main">
+                        <form class="form-horizontal" method="post" action="">
+                            <fieldset>
+                                <h4><legend class="text-left header">Preencha suas informações: <span></span></legend></h4>
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <input id="fname" name="name" type="text" placeholder="Insira seu primeiro nome" class="form-control" required>
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <input id="lname" name="name" type="text" placeholder="Insira seu último nome" class="form-control" required>
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <input id="email" name="email" type="email" placeholder="Insira seu email" class="form-control" required>
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <input id="phone" name="phone" type="text" placeholder="Insira seu telefone" class="form-control" required>
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <textarea id="message" name="message" type="text" placeholder="Insira sua mensagem que retornaremos em até 2 dias úteis." class="form-control-msg" rows="7" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-12 text-center">
+                                        <button type="submit" class="formbutton">Enviar</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <!-- Início da tag section com texto de contato -->
+                    <section class="col-12">
+                        <h2>Entre em contato!</h2>
+                        <p>Olá! Estamos felizes em ajudar a realizar seus planos de viagem!</p>
+                    </section>
+                    <!-- Fim da tag section com texto de contato -->
+                </div>
+                <!-- Fim Formulário -->
+                <!-- Início Maps -->
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="panel panel-default">
+                            <!-- <section id="text-local" class="text-left header"> 
+                                <h2>Onde estamos localizados</h2>
+                                <h4>Endereço:</h4>
+                                <p>Avenida ABC, 124 <br>
+                                    Centro, São Paulo - SP - CEP: 12345-000
+                                </p>
+                                </section>  -->
+                            <div class="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.277643715317!2d-47.451420923706806!3d-23.48650705884827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58a9f61b55945%3A0x4ead928c70b1e690!2sEscola%20e%20Faculdade%20de%20Tecnologia%20SENAI%20Gaspar%20Ricardo%20J%C3%BAnior!5e0!3m2!1spt-BR!2sbr!4v1684972164980!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim Maps -->
+            </div>
+        </div>
+    </div>
+    <!-- Fim Form Contato -->
+    <!-- Início Footer -->
+    <footer class="rodape">
+        <div class="container">
+            <div class="row m-0">
+                <!-- Início Logo -->
+                
+                <!-- Fim Logo -->
+                <!-- Início texto rodape -->
+                
+                <!-- Fim texto rodape -->
+                <!-- Início das mídias sociais -->
+                <div class="col-md-4">
+                    <figure class="redes-sociais">
+                        <a href="#"><img src="./img/redes_sociais/face.png" alt=""></a>
+                        <a href="#"><img src="./img/redes_sociais/insta.png" alt=""></a>
+                        <a href="#"><img src="./img/redes_sociais/youtube.png" alt=""></a>
+                        <a href="#"><img src="./img/redes_sociais/linkedin.png" alt=""></a>
+                    </figure>
+                </div>
+                <!-- Fim mídias sociais -->
+                <!-- Início dos Direitos Autorais -->
+                <!-- <div class="col-12">
+                    <p class="direitos">Direitos Autorais Reservados.</p>
+                    </div> -->
+                <!-- Fim dos Direitos Autorais -->
+            </div>
+        </div>
+    </footer>
+    <!-- Fim Footer -->
+
+
+</body>
+
+<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/menu.js"></script>
+
+</html>
