@@ -534,7 +534,6 @@ body, ul {
 }
 /* Fim Efeto Pulse */
 
-
 /* Fim Whatsapp */
 
 /* Início CSS Card Produtos */
@@ -575,3 +574,253 @@ body, ul {
 }
 
 /* Fim CSS Card Produtos */
+
+/*Estrutura do Site*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+
+	font-family: "Trebuchet MS" Helvetica, sans-serif;
+	background: #fff url(../imagens/fundo.png) repeat-x;
+}
+
+#container {
+	width: 750px;
+	margin: 0 auto;
+
+}
+
+#topo {
+	height: 150px;
+	background: url(../imagens/detalhe-topo.png) no-repeat right top;
+	padding-top: 25px;
+	
+}
+
+.logo {
+	width: 152px;
+	height: 66px;
+	background: url(../imagens/logo.png)no-repeat center;
+	text-indent: -3000px;
+}
+
+/*Barra de navegação*/
+
+ul{
+
+	margin: 50;
+	padding: 50;
+	list-style: none;
+}
+
+#topo ul {
+	margin-top: 30px;
+	background: #116918;
+	float: left;
+
+}
+
+#topo ul li {
+	float: left;
+}
+
+#topo ul a {
+
+	font-size: 0.9em;
+	display: block;
+	padding: 0.5em 1.5em;
+	line-height: 2.1em;
+	text-decoration: none;
+	color: #fff;
+	background: url(../imagens/divisor.png) no-repeat left center;
+
+}
+
+#topo ul .primeiro a {
+	background: none;
+}
+
+#topo ul a:hover {
+	color: #0c8d0c;
+}
+
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.fotos #navegacao a#fotos {
+
+	color: #fff;
+	background: #228509;
+	cursor: text;
+}
+
+/*Configura layout de três colunas */
+
+#conteudo {
+	margin-top: 60px;
+	background: rgb(5, 80, 3);
+
+}
+
+#lateral {
+	width: 150px;
+	float: left;
+	margin: 0 0 20px -725px;
+}
+
+
+#primario {
+	width: 700px;
+	float: left;
+	margin: 0 0 20px 195px;
+
+}
+
+#duas-colunas #primario {
+	width: 555px;
+	
+}
+
+#uma-coluna #primario {
+	width: 720px;
+	margin: 0 0 20px 50px;
+	
+}
+#secundario {
+	width: 700px;
+	float: left;
+	margin: 0 0 20px 195px;
+	
+}
+/*Caixa*/
+
+.caixa{
+	margin: 10px 0;
+	padding: 5px 0 5px 0;
+	background: #f3f3f3 url(../imagens/fundo-caixa.png);
+}
+ 
+ h2 {
+ 	font-size: 1.1em;
+ 	background: #046311;
+ 	color: #fff;
+ 	padding: 5px;
+ }
+
+ .caixa-conteudo {
+ 	background: #fff;
+ 	padding: 5px;
+ 	margin-top: 5px;
+ }
+/*Formatar menus laterais*/
+
+#lateral ul a {
+font-size: 0.9em;
+padding: 3px;
+display: block;
+line-height: 30px;
+color: #000;
+text-decoration: none;
+border-bottom: 2px solid #f3f3f3;
+
+}
+
+#lateral ul a:hover {
+	background: #f9f9f9 url(../imagens/marcador.png) no-repeat left center;
+	padding-left: 20px;
+	color: #a1a1a1;
+}
+/*Formatando formularios*/
+
+label {
+	display: block;
+	cursor: pointer;
+	background-color: #fff;
+	font-size: 0.9em;
+	width: 150px;
+
+}
+
+input {
+	margin:30px;
+	border-color: lightblue;
+	
+}
+
+.submit {
+	width: 80px;
+	background-color:#054215;
+	color: beige;
+	border: 2px solid #075e2b;
+
+}
+/*Formatação Imagens*/
+
+img {
+border: 2px solid #dfdfdf;
+
+}
+img.imagem-principal {
+	width: 98px;
+	border: 3px solid #dfdfdf;
+	margin-top: 3px;
+}
+/*Formatação Cabeçalhos*/
+
+h3 {
+	text-transform: uppercase;
+	display: inline;
+	font-size: 0.9em;
+	padding: 3px;
+	background: #b10333;
+	color: #fff;
+
+}
+
+
+/*Formatando lista noticias*/
+
+#lista-noticias li {
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+	height: 125px;
+	
+}
+
+#lista-noticias li a img {
+	float: left;
+	margin: 1px;
+}
+
+#lista-noticias li h3 {
+background: #fff;
+font-size: 0.8em;
+padding: 0;
+color: #3e7ab9;
+
+}
+
+#lista-noticias li p {
+font-size: 0.7em;
+}
+
+#lista-noticias li:hover {
+background: #eee;
+cursor: pointer;
+}
+
+
+
+/*Rodape*/
+
+#rodape {
+     background: #294c71;
+	padding: 15px;
+	margin: 0 auto;
+	color: #fff;
+	width: 750px;
+}
