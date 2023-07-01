@@ -2,6 +2,103 @@ body, ul {
     margin: 0px;
     padding: 0px;
 }
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Bebas Neue';
+}
+
+.container-grid{
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    z-index: 1;
+    background-color: #007566;
+    height: 80px;
+    position: fixed;
+    width: 100vw;
+}
+
+.conteudo-header{
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.logo{
+    float: left;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+}
+
+.menu-header{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-header a{
+    color: #F2EBD5;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    transition: 0.3s;
+}
+
+.menu-header a:hover:not(.botao){
+    font-size: 1.6em;
+    transition: 0.3s;
+    text-shadow: 4px 4px 6px #0000007a;
+}
+
+.whatsapp{
+    position: fixed;
+    z-index: 2;
+    top: 200px;
+    right: 40px;
+}
+
+.whatsapp img{
+    height: 60px;
+}
+
+.botao{
+    background-color: #F2EBD5;
+    color: #007566 !important;
+    height: 45px;   
+    width: 150px;
+    text-align: center;
+    line-height: 47px;
+    font-size: 1.5em !important;
+    border: solid 2px #3f9489;
+    border-radius: 30px 10px;
+}
+
+
+.botao:hover{
+    font-size: 1.6em !important;
+    height: 50px;
+    line-height: 50px;
+    width: 160px;
+    transition: 0.3s;
+    box-shadow: 4px 4px 6px #0000007a;
+}
+
+.menu-barras{
+    display: none;
+}
 #menu a {
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -667,13 +764,15 @@ body.fotos #navegacao a#fotos {
 }
 
 #lateral {
-	width: 150px;
+	width: 250px;
 	float: left;
 	margin: 0 0 20px -725px;
+    left: 100%;
+
 }
 
 
-#primario {
+#primario { 
 	width: 700px;
 	float: left;
 	margin: 0 0 20px 195px;
@@ -681,17 +780,18 @@ body.fotos #navegacao a#fotos {
 }
 
 #duas-colunas #primario {
+    padding-top: 750px;
 	width: 555px;
 	
 }
 
 #uma-coluna #primario {
 	width: 720px;
-	margin: 0 0 20px 50px;
+	margin: 0 0 20px 50px; 
 	
 }
 #secundario {
-	width: 700px;
+	width: 500px;
 	float: left;
 	margin: 0 0 20px 195px;
 	
@@ -700,7 +800,7 @@ body.fotos #navegacao a#fotos {
 
 .caixa{
 	margin: 10px 0;
-	padding: 5px 0 5px 0;
+	padding: 2px 0 2px 0;
 	background: #f3f3f3 url(../imagens/fundo-caixa.png);
 }
  
@@ -713,8 +813,8 @@ body.fotos #navegacao a#fotos {
 
  .caixa-conteudo {
  	background: #fff;
- 	padding: 5px;
- 	margin-top: 5px;
+ 	padding: 10px;
+ 	margin-top: 10px; 
  }
 /*Formatar menus laterais*/
 
@@ -765,7 +865,7 @@ border: 2px solid #dfdfdf;
 
 }
 img.imagem-principal {
-	width: 98px;
+	width: 750px;
 	border: 3px solid #dfdfdf;
 	margin-top: 3px;
 }
@@ -818,9 +918,9 @@ cursor: pointer;
 /*Rodape*/
 
 #rodape {
-     background: #294c71;
-	padding: 15px;
-	margin: 0 auto;
+    background: #294c71;
+	padding: 150px;
+	margin-top: 0 auto;
 	color: #fff;
 	width: 750px;
 }
