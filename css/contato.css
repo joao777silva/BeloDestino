@@ -128,54 +128,6 @@ body {
 
 }
 
-/* Início CSS Footer */
-.rodape {
-    padding: 50px 50px 0;
-}
-.rodape .container #img-logo {
-    height: 50%;
-    width: 50%;
-    padding-left: 10px;
-    transition: transform .3s;
-    display: block;
-}
-.rodape .container #img-logo:hover {
-    transform: scale(1.5);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-}
-.rodape .info-contato p {
-    margin: 0;
-}
-.rodape a {
-    text-decoration: none;
-    color: #000;
-    font-size: 13px;
-}
-.rodape a:hover {
-    font-weight: bold;
-}
-.rodape .redes-sociais {
-    display: inline-block;
-}
-.rodape .redes-sociais img {
-    width: 50px;
-    height: 50px;
-    padding-left: 0;
-    margin-left: 0.7rem;
-    transition: transform .3s;
-    border-radius: 15px; /* Arredondando div do objeto redes sociais*/
-}
-.rodape .redes-sociais img:hover {
-    z-index: 1;
-    transform: scale(1.5);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.446);
-}
-.rodape p.direitos {
-    text-align: center;
-    margin-top: 40px;
-}
-/* Fim CSS Footer */
-
 /* Início CSS Contato */
 .contato {
     margin-top: 50px;
@@ -264,11 +216,11 @@ body {
 /* CSS Estilos Banner*/
 .section-banner-home {
     width: 100%;
-    height: 600px;
+    height: 500px;
     margin-top: 0px;
     padding: 0px;
-    /* background-color: #f2b84b; */
-    background-image: url(../img/banner_footer.jpg);
+    /* background-color: #f2b84b;  */
+    background-image: url(../img/banner_footer3.jpg); 
     background-repeat: no-repeat;
 }
 .section-banner-home img {
@@ -284,31 +236,22 @@ body {
     width: 60%;
     font-weight: 500;
     padding-bottom: 20px;
-    color: white;
+    color: black;
     font-family: sans-serif;
 }
 .section-banner-home .texto-banner p {
     font-size: 30px;
     margin-bottom: 20px;
-    color: white;
+    color: black;
     font-family: sans-serif;
     text-align: left;
 }
 .section-banner-home .texto-banner h2 {
     font-size: 30px;
     margin-bottom: 20px;
-    color: white;
+    color: black;
     font-family: sans-serif;
     text-align: left;
-}
-.section-banner-home .texto-banner a {
-    color: white;
-    text-decoration: none;
-    background-color: #f2b84b;
-    padding: 10px 10px;
-    font-size: 15px;
-    border-radius: 10px;
-    font-family: sans-serif;
 }
 /* Fim css estilos Banner */
 
@@ -317,7 +260,7 @@ body {
 .map {
     margin-top: 70px;
     width: auto;
-    height: 300px;
+    height: 400px;
 }
 .map iframe {
     width: 100%;
@@ -326,3 +269,44 @@ body {
 
 /* Fim CSS Mapa */
 
+.destaque-banner {
+    position: absolute;
+    z-index: 50;
+    background-color: white;
+    bottom: 5%;
+    right: 5%;
+    box-shadow: 3px 3px 6px #0000007a;
+    width: 600px;
+    height: 600px;
+}
+.destaque-banner h1 {
+    padding-top: 50px;
+    padding-left: 200px;
+}
+
+
+/* Início CSS Footer */
+.rodape {
+    padding: 120px 120px 0;
+}
+.rodape .redes-sociais {
+    display: inline-block;
+}
+.rodape .redes-sociais img {
+    width: 50px;
+    height: 50px;
+    padding-left: 0;
+    margin-left: 0.7rem;
+    transition: transform .3s;
+    border-radius: 15px; /* Arredondando div do objeto redes sociais*/
+}
+.rodape .redes-sociais img:hover {
+    z-index: 1;
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.446);
+}
+.rodape p.direitos {
+    text-align: center;
+    margin-top: 40px;
+}
+/* Fim CSS Footer */
