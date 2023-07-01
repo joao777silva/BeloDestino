@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./styleprodutos.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./prodcss/produtosmobile.css" />
+    <link rel="stylesheet" href="./prodcss/produtosstyle.css" />
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
-    <title>Belo Destino</title>
-</head>
-<body>
-    <!-- Início Menu Responsivo -->
-    <header id="header">
-        <a id="logo" href="index.html"><img src="./img/fb757f9a-0f74-47a3-b55a-3b3ed03c17c6-PhotoRoom.png-PhotoRoom.png" alt="#"></a>
-        <h1>Belo Destino</h1>
-        <nav id="nav">
-            <button aria-label="Abrir Menu" id="btn-mobile" arial-haspopup="true" aria-controls="menu" aria-expanded="false">
-                <span id="hamburger"></span>
-            </button>
-            <ul id="menu" role="menu">
-                <li><a class="LinkMenu" href="index.html">Home</a></li>
-                <li><a class="LinkMenu" href="viagens.html">Viagens</a></li>
-                <li><a class="LinkMenu" href="blog.html">Blog</a></li>
-                <li><a class="LinkMenu" href="feedback.html">Feedback</a></li>
-                <li><a class="LinkMenu" href="contato.html">Contato</a></li>
-            </ul>
+    <script
+      src="https://kit.fontawesome.com/b7a0eff3c2.js"
+      crossorigin="anonymous"sit
+    ></script>
+    <title>Belo destino</title>
+  </head>
+  <body> 
+    <!-- Início Menu -->
+    <header>
+      <div class="conteudo-header">
+        <img class="logo" src="./img/fb757f9a-0f74-47a3-b55a-3b3ed03c17c6-PhotoRoom.png-PhotoRoom.png" alt="Logo Senai" />
+        <nav id="menu-header" class="menu-header">
+          <a class="fa-solid fa-house"  href="index.html" title="Início da Página"></a>
+          <a href="#">Viagens</a>
+          <a href="#">Blog</a>
+          <a href="#">Feedback</a>
+          <a class="botao" href="#">Contate-nos</a>
         </nav>
+        <a
+          class="menu-barras"
+          href="javascript: void(0)"
+          onclick="menu()"
+        >
+          <i id="icone-menu" class="fas fa-bars"></i>
+        </a>
+      </div>
     </header>
+    <!-- Fim Menu -->
 
     <!-- Início CARD Produtos -->
     <div class="text-center">
@@ -45,9 +52,9 @@
                     <div class="card-body">
                         <h5 class="card-title">Amsterdã </h5>
                         <p class="card-text">
-                            Formato: 6 x 19 <br>
-                            Possui um recorte de obra de arte com o nome do artista na frente e um poema no verso.<br>
-                            Impresso em Papel Cartão 300g/m².
+                            Passagens apartir de: $25,000  <br>
+                            Sem hospedagem inclusa <br>
+                            Saída de São Paulo às 06:00hr da manhã
 
                         </p> 
                         <a href="" class="btn btn-primary">Comprar</a>
@@ -69,13 +76,9 @@
                     <div class="card-body">
                         <h5 class="card-title">Berlim</h5>
                         <p class="card-text">
-                            Editora: Universo dos Livros; 1ª edição (10 dezembro 2020)<br>
-                            Idioma: Português<br>
-                            Capa comum: 2272 páginas<br>
-                            ISBN-10: 6556090662<br>
-                            ISBN-13: 978-6556090665<br>
-                            Dimensões: 15.7 x 12.5 x 23 cm
-
+                            Passagens apartir de $10,000 <br>
+                            Sem hospedagem inclusa<br>
+                            Saída de São Paulo às 14:00hr da tarde<br>
                         </p>
                         <a href="" class="btn btn-primary">Comprar</a>
                     </div>
@@ -96,9 +99,9 @@
                     <div class="card-body">
                         <h5 class="card-title">Cingapura</h5>
                         <p class="card-text">
-                            Colar feito todo em metal dourado.<br>
-                            Ampulheta de vidro com areia no interior.<br>
-                            Rico em detalhes, com gravações e todo articulado. Acabamento impecável.
+                            Passagens apartir de $25,000 <br>
+                            Sem hospedagem inclusa<br>
+                            Saída de São Paulo às 12:00hr <br>
 
                         </p>
                         <a href="" class="btn btn-primary">Comprar</a>
@@ -120,12 +123,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Dubai</h5>
                         <p class="card-text">
-                            Detalhes Autor: Victoria Aveyard<br>
-                            Gênero: FicçãoTamanho: 16,00 x 23,00<br>
-                            Descrição EAN: 7907272672016<br>
-                            Sinopse LIVROS NOVOS E FÍSICOS<br>
-                            Este Kit Contém 1 exemplar de cada
-
+                            Passagens e hospedagem inclusa apartir de $50,000 <br>
+                            Saída de São Paulo às 21:00hr da noite <br>
                         </p>
                         <a href="" class="btn btn-primary">Comprar</a>
                     </div>
@@ -146,8 +145,9 @@
                     <div class="card-body">
                         <h5 class="card-title">Fernando de Noronha</h5>
                         <p class="card-text">
-                            A Vela Flor de Cerejeira traz o aroma perfeito para aflorar o amor pessoal<br>
-                            Qualidade e sofisticação em um único produto!
+                            Passagens apartir de $1,200 <br>
+                            Sem hospedagem inclusa<br>
+                            Saída de São Paulo às 01:00hr da manhã <br>
                         </p>
                         <a href="" class="btn btn-primary">Comprar</a>
                     </div>
@@ -168,13 +168,9 @@
                     <div class="card-body">
                         <h5 class="card-title">Frankfurt</h5>
                         <p class="card-text">
-                            Editora: Disney-Hyperion; 1ª edição (3 junho 2014)<br>
-                            Idioma: Inglês<br>
-                            Capa comum: 1840 páginas<br>
-                            ISBN-10: 1484707230<br>
-                            ISBN-13: 978-1484707234<br>
-                            Idade de leitura: 8 - 12 anos<br>
-                            Dimensões: 13.36 x 11.86 x 19.58 cm<br>
+                            Passagens e hospedagem inclusa apartir de $20,000 <br>
+                            O café da manhã está incluso <br>
+                            Saída de São Paulo às 23:00hr da noite <br>
 
                         </p>
                         <a href="" class="btn btn-primary">Comprar</a>
@@ -196,12 +192,9 @@
                     <div class="card-body">
                         <h5 class="card-title">Hong-kong</h5>
                         <p class="card-text">
-                            Editora:  Companhia das Letras; 1ª edição (7 agosto 2017)<br>
-                            Idioma: Português<br>
-                            Capa comum: 342 páginas<br>
-                            ISBN-10: 8535929444<br>
-                            ISBN-13: 978-8535929447<br>
-                            Dimensões: 20.8 x 13.8 x 2.6 cm
+                            Passagens apartir de $15,000 <br>
+                            Sem hospedagem inclusa<br>
+                            Saída de São Paulo às 14:00hr da tarde<br>
                         </p>
                         <a href="" class="btn btn-primary">Comprar</a>
                     </div>
@@ -220,7 +213,7 @@
                         </a>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Almofada de Acotar</h5>
+                        <h5 class="card-title">Istambul</h5>
                         <p class="card-text">
                             Elas são feitas com tecido 100% poliéster<br> 
                             super confortáveis, com verso em tecido oxford na cor preta.<br>
@@ -245,7 +238,7 @@
                         </a>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Livro Todas as suas imperfeições</h5>
+                        <h5 class="card-title">Londres</h5>
                         <p class="card-text">
                             Editora: Galera; 23ª edição (24 julho 2019)<br>
                             Idioma: Português<br>
@@ -271,7 +264,7 @@
                         </a>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">???</h5>
+                        <h5 class="card-title">Madri</h5>
                         <p class="card-text">
                             Editora: Galera; 23ª edição (24 julho 2019)<br>
                             Idioma: Português<br>
@@ -297,7 +290,7 @@
                         </a>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">???</h5>
+                        <h5 class="card-title">Milão</h5>
                         <p class="card-text">
                             Editora: Galera; 23ª edição (24 julho 2019)<br>
                             Idioma: Português<br>
@@ -323,7 +316,7 @@
                         </a>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">???</h5>
+                        <h5 class="card-title">Munique</h5>
                         <p class="card-text">
                             Editora: Galera; 23ª edição (24 julho 2019)<br>
                             Idioma: Português<br>
@@ -349,7 +342,7 @@
                         </a>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">???</h5>
+                        <h5 class="card-title">Nova York</h5>
                         <p class="card-text">
                             Editora: Galera; 23ª edição (24 julho 2019)<br>
                             Idioma: Português<br>
@@ -375,7 +368,7 @@
                         </a>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">???</h5>
+                        <h5 class="card-title">Paris</h5>
                         <p class="card-text">
                             Editora: Galera; 23ª edição (24 julho 2019)<br>
                             Idioma: Português<br>
@@ -401,7 +394,7 @@
                         </a>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">???</h5>
+                        <h5 class="card-title">Roma</h5>
                         <p class="card-text">
                             Editora: Galera; 23ª edição (24 julho 2019)<br>
                             Idioma: Português<br>
@@ -427,7 +420,7 @@
                         </a>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">???</h5>
+                        <h5 class="card-title">Seul</h5>
                         <p class="card-text">
                             Editora: Galera; 23ª edição (24 julho 2019)<br>
                             Idioma: Português<br>
@@ -453,7 +446,7 @@
                         </a>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">???</h5>
+                        <h5 class="card-title">Tóquio</h5>
                         <p class="card-text">
                             Editora: Galera; 23ª edição (24 julho 2019)<br>
                             Idioma: Português<br>
@@ -479,7 +472,7 @@
                         </a>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">???</h5>
+                        <h5 class="card-title">Viena</h5>
                         <p class="card-text">
                             Editora: Galera; 23ª edição (24 julho 2019)<br>
                             Idioma: Português<br>
@@ -558,8 +551,8 @@
     
 </body>
 
-<script src="bootstrap/js/bootstrap.min.js"></script>
-
+<script src="./bootstrap/js/bootstrap.min.js"></script>
+<script src="./javascript/menu.js"></script>
 
 
 </html>
