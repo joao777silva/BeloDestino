@@ -1,20 +1,22 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 
 body{
     font-family: 'Bebas Neue';
+    background-color: #F2EBD5;
 }
 
 .container-grid{
-    width: 85%;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    
 }
 
 header{
@@ -23,6 +25,7 @@ header{
     height: 80px;
     position: fixed;
     width: 100vw;
+    top: 0;
 }
 
 .conteudo-header{
@@ -52,7 +55,7 @@ header{
     color: #F2EBD5;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.25em;
+    font-size: 1.2em;
     transition: 0.3s;
 }
 
@@ -77,10 +80,10 @@ header{
     background-color: #F2EBD5;
     color: #007566 !important;
     height: 45px;   
-    width: 150px;
+    width: 200px;
     text-align: center;
-    line-height: 47px;
-    font-size: 1.5em !important;
+    line-height: 30px;
+    font-size: 1.3em !important;
     border: solid 2px #3f9489;
     border-radius: 30px 10px;
 }
@@ -90,7 +93,7 @@ header{
     font-size: 1.6em !important;
     height: 50px;
     line-height: 50px;
-    width: 160px;
+    width: 200px;
     transition: 0.3s;
     box-shadow: 4px 4px 6px #0000007a;
 }
@@ -98,47 +101,106 @@ header{
 .menu-barras{
     display: none;
 }
-
 /* inicio css galeria */
 
 .galeria {
-    margin: 0px auto 0px;
-
-
+    margin: 60px auto 20px;
+    display: flex;
+    position: relative;
+    
+    
 
 }
 
 .galeria h2 {
     text-align: center;
-    font-size: 0;
-    top: 20px;
+    font-size: 24px;
+    top: 50px;
+    margin-top: 50px;
 
 }
 
 .galeria p {
-    text-align: center ;
-    width: 80%;
-    margin: 100px
+    text-align: center;
+    width: 50%;
+    margin: 14px auto 50px;
+    margin-top: 50px;
 
 }
 .galeria .gallery img {
     width: 80%;
     height: 80%;
-    -webkit-transition: -wekit-transform .2s ease;
+    -webkit-transition: -wekit-transform .5s ease;
     transition: transform .5s ease;
     display: block;
 }
 
 .galeria .gallery {
-    width: 50%;
-    margin: 100px auto 50px;
+    width: 30%;
+    margin: 14px auto 50px;
+   
     
     
 }
 .galeria .gallery img:hover {
-   -webkit-transform: scale(1.5);
-    transform: scale(1.2);
+   -webkit-transform: scale(1.9);
+    transform: scale(1.5);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* fim css galeria */
+
+/* Início CSS Footer */
+
+.rodape{
+    padding: 50px 0px;
+    background-color:#007566 ;
+}
+
+.rodape .container #img-logo{
+    height: 50%;
+    width: 50%;
+    padding-left: 10px;
+    transition: transform .2s;
+}
+
+.rodape .container #img:hover{
+   transform: scale(1.5);
+}
+
+.rodape .info-contato p{
+    margin: 0;
+    color: #F2EBD5;
+}
+
+.rodape a{
+    text-decoration: none;
+    color:#F2EBD5;
+    font-size: 13px;
+}
+
+.rodape a:hover{
+    font-weight: bold;
+}
+
+.rodape .redes-sociais img{
+   width: 50px;
+   height: 50px;
+   padding-left: 0;
+   margin-left: 0.7rem;
+   transition: transform .3s;
+   border-radius: 10px;
+}
+
+.rodape .redes-sociais img:hover{
+    z-index: 1;
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgb(94, 91, 91);
+}
+
+.rodape p.direitos{
+    text-align: center;
+    margin-top: 40px;
+    color: #F2EBD5;
+}
+/* Fim CSS Footer */
