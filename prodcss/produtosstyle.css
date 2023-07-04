@@ -20,7 +20,8 @@ header{
     z-index: 1;
     background-color: #007566;
     height: 80px;
-    position: fixed;
+    position: relative;
+    top: 0;
     width: 100vw;
 }
 
@@ -55,6 +56,10 @@ header{
     transition: 0.3s;
 }
 
+.menu-header #font{
+    font-family: 'Bebas Neue'!important;
+}
+
 .menu-header a:hover:not(.botao){
     font-size: 1.6em;
     transition: 0.3s;
@@ -76,7 +81,7 @@ header{
     background-color: #F2EBD5;
     color: #007566 !important;
     height: 45px;   
-    width: 150px;
+    width: 200px;
     text-align: center;
     line-height: 47px;
     font-size: 1.5em !important;
@@ -89,7 +94,7 @@ header{
     font-size: 1.6em !important;
     height: 50px;
     line-height: 50px;
-    width: 160px;
+    width: 200px;
     transition: 0.3s;
     box-shadow: 4px 4px 6px #0000007a;
 }
@@ -102,20 +107,22 @@ header{
 /* início CSS CARD Produtos */
 
 .col-lg-4 .card{
-    /* box-shadow: 4px 4px 6px #0000007a; */
-    /* margin-bottom: 10px; */
-    border: none;
-    border-style: none;    
+    /* box-shadow: 4px 4px 6px #0000007a;  */
+    /* margin-bottom: 10px;  */
+    border: solid 1px ;
+    border-color: rgb(190, 190, 190);
+    margin-top: 8px;
     min-height: 450px;
 }
 
 .text-center .mb-5{
     margin-top: 20px;
+    position: relative;
 }
 
 .card img{
-    height: 500px;
-    width: 700px;
+    height: 400px;
+    width: 500px;
 }
 
 .card-body a{
@@ -128,6 +135,10 @@ header{
     background-color: #02473e;
     border: 0px;
     border-style: none; 
+}
+
+.card-title{
+    font-family: 'Bebas Neue';
 }
 
 .card-text{
@@ -165,7 +176,54 @@ header{
 
 /* Fim CSS CARD Produtos */
 
+/* Início Whatsapp */
 
+.whatsapp{
+    position: fixed;
+    z-index: 200;
+    top: 200px;
+    right: 20px;
+}
+
+.whatsapp img{
+    height: 60px;
+}
+
+/* Início Efeito Pulse  */
+.whatsapp .pulse{
+    animation: pulse 0.7s infinite;
+    margin: 0 auto;
+    display: table;
+    margin-top: 50px;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+
+@-webkit-keyframes pulse{
+    0% {
+        -webkit-transform: scale(1);
+        -webkit-filter: brightness(100%);
+    }
+    100% {
+        -webkit-transform: scale(1.1);
+        -webkit-filter: brightness(110%);
+    }
+}
+
+@keyframes pulse{
+    0% {
+        transform: scale(1);
+        filter: brightness(100%);
+    }
+    100% {
+        transform: scale(1.1);
+        filter: brightness(110%);
+    }
+}
+/* Fim Efeito Pulse */
+
+/* Fim Whatsapp */
 
 /* Início CSS Footer */
 
@@ -227,7 +285,7 @@ header{
 @media screen and (max-width:1200px){
 
     .menu-header{
-        width: 60%;
+        width: 100%;
     }
     
     .conteudo-sobre{
