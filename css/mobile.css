@@ -5,15 +5,15 @@
         justify-content: space-around;
         background-color: rgba(0,0,0,0.90);
         position: absolute;
-        top: 0px;
+        top: 80px;
         left: 0px;
         height: 300px;
         width: 100%;
     }    
 
-    .titulo-senai{
+    /*.titulo-senai{
         font-size: 42px;
-    }
+    } */
 
     .menu-barras{
         display: initial
@@ -23,70 +23,65 @@
         color: white;
         font-size: 30px;
     }
-
-    .banner{
-        background-image: url(../img/imagem-fundo-ranking.jpg);
-    }
-    .imagem-sobre{
+    
+    .form_main{
         width: 100%;
     }
 
-    .texto-sobre{
+    .form-horizontal {
+        padding-left: 10px;
+    }
+
+    .destaque-banner{
+        width: 90%;
+        max-height: 400px;
+        border-left: 10px;
+    }
+     
+    .destaque-banner h1, h2, h3 {
         width: 100%;
-        height: unset;
+        font-size: 25px;
     }
 
- 
-    .conteudo-info{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 660px;
-        justify-content: space-between;
+    .destaque-banner p {
+        width: 100%;
+        font-size: 15px;
     }
 
-    .conteudo-sobre{
-        flex-direction: column;
-        align-items: center;
-    }
-
-        
-    .container-mapa{
+    /* .section-banner-home {
+        width: 100%;
+        height: 580px;
+        margin-top: 100px;
+        padding: 0px;
+        background-color: #007566; 
+        background-repeat: no-repeat;
         position: relative;
-        overflow: hidden;
+    } */
+
+    .section-banner-home .texto-banner h1 {
+        padding-top: 320px;
+        font-size: 35px;
         width: 100%;
-        padding-top: 5%;
+    }
+    .section-banner-home .texto-banner h2 {
+        font-size: 20px;
+    }
+    .section-banner-home{
+        display: relative;
     }
 
-    .mapa-responsivo{
-        position: relative;
-        margin-top: 10px;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
+    .section-banner-home .texto-banner p{
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 15px;
+        text-align: center;
     }
 
-    .container-video{
-        position: relative;
-        overflow: hidden;
+    .rodape{
         width: 100%;
-        padding-top: 30%;
-        min-height: 200px;
     }
 
-    .video-responsivo{
-        position: absolute;
-        margin-top: 10px;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-    }
+
 }
 
 @media screen and (min-width:768px){
