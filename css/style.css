@@ -59,8 +59,10 @@ header{
 
 .menu-header a:hover:not(.botao){
     font-size: 1.6em;
-    transition: 0.3s;
-    text-shadow: 4px 4px 6px #0000007a;
+    color: white;
+}
+.menu-header #font {
+    font-family: 'Bebas Neue', sans-serif !important;
 }
 
 .whatsapp{
@@ -294,7 +296,7 @@ header{
     margin: 30px auto;
 }
 .destaque figcaption {
-    font-size: 13px;
+    font-size: 10px;
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: bold;
@@ -304,19 +306,20 @@ header{
     justify-content: center;
     display: flex;
     text-decoration: none;
-    color: #d60303;
-    font-size: 18px;
+    color: #075507;
+    font-size: 20px;
     font-weight: bold;
     margin: 30px 0;
 }
 .destaque a:hover {
-    color: #d60303;
+    color: #095313;
     font-size: 24px;
     transition: 0.3s;
     text-shadow: 4px 4px 6px #862c2c7a;
 }
 .destaque img {
-    height: 150px;
+    height: 300px;
+    width: 300px;
 }
 /* Fim do CSS Destaque */
 
@@ -764,10 +767,10 @@ body.fotos #navegacao a#fotos {
 }
 
 #lateral {
-	width: 250px;
+	width: 200px;
 	float: left;
 	margin: 0 0 20px -725px;
-    left: 100%;
+    left: 1000px;
 
 }
 
@@ -775,40 +778,39 @@ body.fotos #navegacao a#fotos {
 #primario { 
 	width: 700px;
 	float: left;
-	margin: 0 0 20px 195px;
+	margin: 0 0 20px 200px;
 
 }
 
 #duas-colunas #primario {
-    padding-top: 750px;
+    padding-top: 700px;
 	width: 555px;
 	
 }
 
 #uma-coluna #primario {
-	width: 720px;
+	width: 700px;
 	margin: 0 0 20px 50px; 
 	
 }
 #secundario {
-	width: 500px;
+	width: 700px;
 	float: left;
-	margin: 0 0 20px 195px;
-	
+	margin: 0 0 20px 195px;	
 }
 /*Caixa*/
 
 .caixa{
 	margin: 10px 0;
-	padding: 2px 0 2px 0;
-	background: #f3f3f3 url(../imagens/fundo-caixa.png);
+	padding: 2px 0;
+	background: #f3f3f3;
 }
  
  h2 {
  	font-size: 1.1em;
  	background: #046311;
  	color: #fff;
- 	padding: 5px;
+ 	padding: 2px;
  }
 
  .caixa-conteudo {
@@ -865,7 +867,7 @@ border: 2px solid #dfdfdf;
 
 }
 img.imagem-principal {
-	width: 750px;
+	width: 700px;
 	border: 3px solid #dfdfdf;
 	margin-top: 3px;
 }
@@ -875,7 +877,7 @@ h3 {
 	text-transform: uppercase;
 	display: inline;
 	font-size: 0.9em;
-	padding: 3px;
+	padding: 5px;
 	background: #b10333;
 	color: #fff;
 
@@ -886,14 +888,14 @@ h3 {
 
 #lista-noticias li {
 	padding: 10px;
-	border-bottom: 1px solid #ccc;
-	height: 125px;
+	border-bottom: 3px solid #ccc;
+	height: 110px;
 	
 }
 
 #lista-noticias li a img {
 	float: left;
-	margin: 1px;
+	margin: 10px;
 }
 
 #lista-noticias li h3 {
@@ -914,13 +916,51 @@ cursor: pointer;
 }
 
 
+/* Início CSS Footer */
 
-/*Rodape*/
-
-#rodape {
-    background: #294c71;
-	padding: 150px;
-	margin-top: 0 auto;
-	color: #fff;
-	width: 750px;
+.rodape {
+    padding: 50px 50px 0;
 }
+.rodape .container #img-logo {
+    height: 50%;
+    width: 50%;
+    padding-left: 10px;
+    transition:transform .3s;
+    display: block;
+}
+.rodape .container #img-logo:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgb(255, 255, 255, 0.2) ;
+}
+.rodape .info-contato p {
+    margin: 0;
+}
+.rodape a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 13px;
+}
+.rodape a:hover {
+    font-weight: bold;
+}
+.rodape .redes-sociais {
+    display: inline-block;
+}
+.rodape .redes-sociais img {
+    width: 50px;
+    height: 50px;
+    padding-left: 0;
+    margin-left: 0,7rem;
+    transition: trasform .3s;
+    border-radius: 15px; /* Arredondando div do objeto redes sociais */
+} 
+.rodape .redes-sociais img:hover {
+    z-index: 1;
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.446);
+}
+.rodape p.direitos {
+    text-align: center;
+    margin-top: 40px;
+}
+/* Fim CSS Footer */
