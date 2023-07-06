@@ -12,5 +12,4 @@ function menu(){
         icone.classList.add("fa-bars");
     }
 
-
 }
