@@ -22,7 +22,7 @@ header{
     z-index: 1;
     background-color: #007566;
     height: 80px;
-    position: fixed;
+    position: relative;
     width: 100vw;
 }
 
@@ -296,7 +296,7 @@ header{
     margin: 30px auto;
 }
 .destaque figcaption {
-    font-size: 10px;
+    font-size: 15px;
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: bold;
@@ -306,7 +306,7 @@ header{
     justify-content: center;
     display: flex;
     text-decoration: none;
-    color: #075507;
+    color: #007566;
     font-size: 20px;
     font-weight: bold;
     margin: 30px 0;
@@ -318,8 +318,8 @@ header{
     text-shadow: 4px 4px 6px #862c2c7a;
 }
 .destaque img {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
 }
 /* Fim do CSS Destaque */
 
@@ -702,8 +702,8 @@ body {
 }
 
 .logo {
-	width: 152px;
-	height: 66px;
+	width: 70px;
+	height: 70px;
 	background: url(../imagens/logo.png)no-repeat center;
 	text-indent: -3000px;
 }
@@ -745,7 +745,7 @@ ul{
 }
 
 #topo ul a:hover {
-	color: #0c8d0c;
+	color: #007566;
 }
 
 body.home #navegacao a#home,
@@ -754,15 +754,23 @@ body.internacional #navegacao a#internacional,
 body.fotos #navegacao a#fotos {
 
 	color: #fff;
-	background: #228509;
+	background: #007566;
 	cursor: text;
 }
 
 /*Configura layout de três colunas */
-
+.news {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    height: auto;
+}
 #conteudo {
 	margin-top: 60px;
-	background: rgb(5, 80, 3);
+	background: #007566;
 
 }
 
@@ -770,15 +778,15 @@ body.fotos #navegacao a#fotos {
 	width: 200px;
 	float: left;
 	margin: 0 0 20px -725px;
-    left: 1000px;
+    left: 100px;
 
 }
 
 
-#primario { 
+#primario {  
 	width: 700px;
 	float: left;
-	margin: 0 0 20px 200px;
+	margin: 0 0 5% 5%;	
 
 }
 
@@ -796,11 +804,16 @@ body.fotos #navegacao a#fotos {
 #secundario {
 	width: 700px;
 	float: left;
-	margin: 0 0 20px 195px;	
+	margin: 0 0 5% 5%;
+    position: relative;	    
 }
-/*Caixa*/
 
-.caixa{
+.conteudo-mundo {
+	margin: 10px 0;
+	padding: 2px 0;
+	background: #f3f3f3;
+}
+.conteudo-paris {
 	margin: 10px 0;
 	padding: 2px 0;
 	background: #f3f3f3;
@@ -808,15 +821,18 @@ body.fotos #navegacao a#fotos {
  
  h2 {
  	font-size: 1.1em;
- 	background: #046311;
+ 	background: #007566;
  	color: #fff;
  	padding: 2px;
  }
 
  .caixa-conteudo {
  	background: #fff;
- 	padding: 10px;
- 	margin-top: 10px; 
+ 	padding: 5px;
+ 	margin-top: 5px; 
+    display: flex;
+    align-items: left;
+    justify-content: left;
  }
 /*Formatar menus laterais*/
 
@@ -855,9 +871,9 @@ input {
 
 .submit {
 	width: 80px;
-	background-color:#054215;
+	background-color:#007566;
 	color: beige;
-	border: 2px solid #075e2b;
+	border: 2px solid #007566;
 
 }
 /*Formatação Imagens*/
@@ -889,19 +905,21 @@ h3 {
 #lista-noticias li {
 	padding: 10px;
 	border-bottom: 3px solid #ccc;
-	height: 110px;
+	height: 100px;
 	
 }
 
 #lista-noticias li a img {
 	float: left;
-	margin: 10px;
+	margin: 1px;
+    height: 80px;
+    width: 80px;
 }
 
 #lista-noticias li h3 {
 background: #fff;
 font-size: 0.8em;
-padding: 0;
+padding: 10px;
 color: #3e7ab9;
 
 }
@@ -917,13 +935,19 @@ cursor: pointer;
 
 
 /* Início CSS Footer */
-
+footer {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 .rodape {
     padding: 50px 50px 0;
 }
 .rodape .container #img-logo {
-    height: 50%;
-    width: 50%;
+    height: 150px;
+    width: 150px;
     padding-left: 10px;
     transition:transform .3s;
     display: block;
