@@ -11,6 +11,11 @@
         width: 100%;
     }    
 
+
+    .texto-banner{
+        padding-left:5%;
+    }
+
     .titulo-senai{
         font-size: 42px;
     }
