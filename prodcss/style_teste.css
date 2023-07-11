@@ -1,282 +1,292 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.cdnfonts.com/css/vogue');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Bebas Neue', sans-serif;
-}
-.container-grid {
-  width: 85%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.conteudo-social {
-  background-color: #080324;
-  width: 100%;
-  display: flex;
-  position: fixed;
-  height: 35px;
-  z-index: 50;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 1.0em;
-}
-.conteudo-social a {
-  color: white;
-  text-decoration: none;
-  font-size: 25px;
-  padding-left: 0.5em;
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-  z-index: 1;
-  background-color: #F9003D;
-  height: 80px;
-  position: fixed;
-  width: 100vw;
-  top: 35px;
-}
-.conteudo-header {
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-  align-items: center;
-}
-.logo {
-  height: 40px;
-}
-.menu-header {
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.menu-header a {
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1.25em;
-  transition: 0.3s;
-}
-.menu-header a:hover:not(.botao) {
-  font-size: 1.6em;
-  color: white;
-}
-.menu-header #font {
-  font-family: 'Bebas Neue', sans-serif !important;
-}
-.whatsapp {
-  position: fixed;
-  z-index: 2;
-  top: 82%;
-  right: 40px;
-}
-.whatsapp img {
-  height: 60px;
-}
-.botao {
-  background-color: #A259F7;
-  height: 45px;
-  width: 150px;
-  text-align: center;
-  line-height: 47px;
-  font-size:  1.5em !important;
-  border: solid 1px #080324;
-  border-radius: 30px 10px;
-}
-.botao:hover {
-  font-size: 1.6em !important;
-  height: 50px;
-  line-height: 50px;
-  width: 160px;
-  transition: 0.3s;
-  box-shadow: 4px 4px 6px #0000007a;
-}
-.menu-barras {
-  display: none;
-}
-.banner {
-  background-image: url(../img/imagem-fundo-banner.jpg);
-  height: 768px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.conteudo-banner {
-  display: flex;
-  align-items: flex-end;
-  height: 100%;  
-}
-.texto-banner {
-  display: flex;
-  flex-direction: column;
-  height: 60%;
-  justify-content: space-around;
-}
-h1 {
-  color: white;
-  font-size: 80px;
-}
-.linha-amarela {
-  border: solid 1px #FFAF00;
-  box-shadow: 1px 1px 3px gold;
-}
-.titulo-senai {
-  font-family: 'Courier New', Courier, monospace;
-  color: #F9003D;
-  font-size: 50px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-.mouse {
-  width: 80px;
-}
-.sobre-projetos {
-  background-color: #080324;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-.sobre-projetos h2 {
-  color: #F9003D;
-  font-size: 50px;
-  font-weight: 500;
-  margin-bottom: 40px;
-}
-.conteudo-sobre {
-  display: flex;
-  justify-content: space-between;
-}
-.imagem-sobre {
-  width: 40%;
-}
-.texto-sobre {
-  width: 50%;
-}
-.texto-participantes {
-  color: white;
-  font-family: 'Courier New', Courier, monospace;
-  text-transform: uppercase;
-  font-size: 25px;
-  font-weight: 600;
-}
-.conteudo-sobre h3 {
-  color: #FFAF00;
-  font-size: 45px;
-  font-weight: 500;
-}
-.texto-sobre p {
-  color: #FFFFFF;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: justify;
+body{
+    font-family: 'Bebas Neue';
 }
 
-.info {
-  background-image: url(../img/imagem-fundo-info.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 40px 0;
+.menu-header #font{
+    font-family: 'Vogue' , sans-serif;
 }
-.conteudo-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 
+.container-grid{
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.card-info {
-  font-family: 'Courier New', Courier, monospace;
-  text-transform: uppercase;
-  margin: 20px;
+
+header{
+    z-index: 1;
+    background-color: #007566;
+    height: 80px;
+    position: relative;
+    top: 0;
+    width: 100vw;
 }
-.card-info h3 {
-  color: #FFFFFF;
-  font-size: 20px;
+
+.conteudo-header{
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
 }
-.card-info p {
-  color: #A259F7;
-  font-size: 22px;
-  font-weight: 600;
-  border: solid 2px #A259F7;
-  width: 250px;
-  padding: 30px 0;
-  text-align: center;
+
+.logo{
+    float: left;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 100px;
 }
-.endereco {
-  padding: 40px 0;
-  background-image: url(../img/imagem-fundo-ranking.jpg);
+
+.menu-header{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.conteudo-endereco {
-  margin: 0 auto;
-  max-width: 850px;
-  position: relative;
+
+.menu-header a{
+    color: #F2EBD5;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    transition: 0.3s;
 }
-.conteudo-endereco h2 {
-  color: #FFAF00;
-  font-size: 50px;
-  font-weight: 500;
+
+
+.menu-header a:hover:not(.botao){
+    font-size: 1.6em;
+    transition: 0.3s;
+    text-shadow: 4px 4px 6px #0000007a;
+    color: #F2EBD5;
 }
-.texto-endereco {
-  color: #A259F7;
-  font-family: 'Courier New', Courier, monospace;
-  background-color: #010010;
-  border: solid 2px #A259F7;
-  padding: 55px 55px;
+
+.whatsapp{
+    position: fixed;
+    z-index: 2;
+    top: 200px;
+    right: 40px;
 }
-.texto-endereco p {
-  width: 100%;
-  font-size: 20px;
+
+.whatsapp img{
+    height: 60px;
 }
-.container-mapa {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 20%;
+
+.botao{
+    background-color: #F2EBD5;
+    color: #007566 !important;
+    height: 45px;   
+    width: 200px;
+    text-align: center;
+    line-height: 47px;
+    font-size: 1.5em !important;
+    border: solid 2px #3f9489;
+    border-radius: 30px 10px;
 }
-.mapa-responsivo {
-  position: absolute;
-  margin-top: 10px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
+
+
+.botao:hover{
+    font-size: 1.6em !important;
+    height: 50px;
+    line-height: 50px;
+    width: 200px;
+    transition: 0.3s;
+    box-shadow: 4px 4px 6px #0000007a;
 }
-.container-video {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-top: 30%;
-  max-height: 200px;
+
+.menu-barras{
+    display: none;
 }
-.video-responsivo {
-  position: absolute;
-  margin-top: 10px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
+/* Fim Menu */
+
+/* início CSS CARD Produtos */
+
+.col-lg-4 .card{
+    /* box-shadow: 4px 4px 6px #0000007a;  */
+    /* margin-bottom: 10px;  */
+    border: solid 1px ;
+    border-color: rgb(190, 190, 190);
+    margin-top: 8px;
+    min-height: 450px;
 }
-footer {
-  height: 80px;
-  background-color: #F9003D;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.text-center .mb-5{
+    margin-top: 20px;
+    position: relative;
+    font-family: 'Vogue';
+    font-size: 30px;
 }
-footer span {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  width: 90%;
-  text-align: center;
+
+.card img{
+    margin-top: 15px;
+    height: 400px;
+    width: 500px;
 }
+
+.card-body a{
+    background-color: #007566;
+    border: 0px;
+    border-style: none; 
+}
+
+.card-body a:hover{
+    background-color: #02473e;
+    border: 0px;
+    border-style: none; 
+}
+
+.card-title{
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+}
+
+.card-text{
+    font-size: 20px;
+}
+
+.bg-image{
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+.hover-overlay .mask{
+    opacity: 0;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.hover-overlay .mask:hover{
+    opacity: 1;
+}
+
+/* Fim CSS CARD Produtos */
+
+/* Início Whatsapp */
+
+.whatsapp{
+    position: fixed;
+    z-index: 200;
+    top: 200px;
+    right: 20px;
+}
+
+.whatsapp img{
+    height: 60px;
+}
+
+/* Início Efeito Pulse  */
+.whatsapp .pulse{
+    animation: pulse 0.7s infinite;
+    margin: 0 auto;
+    display: table;
+    margin-top: 50px;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+
+@-webkit-keyframes pulse{
+    0% {
+        -webkit-transform: scale(1);
+        -webkit-filter: brightness(100%);
+    }
+    100% {
+        -webkit-transform: scale(1.1);
+        -webkit-filter: brightness(110%);
+    }
+}
+
+@keyframes pulse{
+    0% {
+        transform: scale(1);
+        filter: brightness(100%);
+    }
+    100% {
+        transform: scale(1.1);
+        filter: brightness(110%);
+    }
+}
+/* Fim Efeito Pulse */
+
+/* Fim Whatsapp */
+
+/* Início CSS Footer */
+
+.rodape{
+    padding: 50px 0px;
+    background-color:#007566 ;
+    margin-top: 2%;
+}
+
+.rodape .container #img-logo{
+    height: 50%;
+    width: 50%;
+    padding-left: 10px;
+    transition: transform .2s;
+}
+
+.rodape .container #img:hover{
+   transform: scale(1.5);
+}
+
+.rodape .info-contato p{
+    margin: 0;
+    color: #F2EBD5;
+}
+
+.rodape a{
+    text-decoration: none;
+    color:#F2EBD5;
+    font-size: 13px;
+}
+
+.rodape a:hover{
+    font-weight: bold;
+}
+
+.rodape .redes-sociais img{
+   width: 50px;
+   height: 50px;
+   padding-left: 0;
+   margin-left: 0.7rem;
+   transition: transform .3s;
+   border-radius: 10px;
+}
+
+.rodape .redes-sociais img:hover{
+    z-index: 1;
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgb(94, 91, 91);
+}
+
+.rodape p.direitos{
+    text-align: center;
+    margin-top: 40px;
+    color: #F2EBD5;
+}
+/* Fim CSS Footer */
 
 @media screen and (max-width: 1200px) {
   .menu-header {
