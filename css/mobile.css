@@ -1,4 +1,4 @@
-@media screen and (max-width: 1519px){ 
+@media screen and (max-width: 768px){ 
     .menu-header{
         display: none;
         flex-direction: column;
@@ -11,10 +11,6 @@
         width: 100%;
     }    
 
-    /*.titulo-senai{
-        font-size: 42px;
-    } */
-
     .menu-barras{
         display: initial
     }
@@ -25,10 +21,12 @@
     }
     
     .form_main{
-        /* width: 50%; */
-        border-right: 10px;
-        width: fit-content;
-        min-width: 480px;
+        width: 80%;
+        /* border-right: 10px;    */
+        /* display: contents; */
+        margin-left: 10%;
+        margin-right: 10%;
+        justify-content: center;
     }
 
     .form-horizontal {
@@ -36,10 +34,12 @@
     }
 
     .destaque-banner{
-        /* width: 50%; */
         max-height: 400px;
-        width: fit-content;
         min-width: 438px;
+        max-width: 420px;
+        bottom: 50%;
+        /* right: 15%;
+        left: 15%; */
     }
      
     .destaque-banner h1, h2, h3 {
@@ -68,99 +68,85 @@
         left: 10px;
         font-size: 15px;
         text-align: left;
-    }
-
-    .rodape{
-        width: 100%;
-    }
-
-
-}
-
-@media screen and (min-width:1519px){
-    .menu-header{
-        display: flex !important;
-    }
-}
-
-@media screen and (max-width: 490px){
-    .menu-header{
-        display: none;
-        flex-direction: column;
-        justify-content: space-around;
-        background-color: rgba(0,0,0,0.90);
-        position: absolute;
-        top: 80px;
-        left: 0px;
-        height: 300px;
-        width: 100%;
-    }    
-
-    .menu-barras{
-        display: initial
-    }
-
-    #icone-menu{
-        color: white;
-        font-size: 30px;
-    }
-    
-    .form_main{
-        /* width: 50%; */
-        border-right: 10px;
-        width: fit-content;
-        min-width: 480px;
-        width: 90%;
-    }
-
-    .form-horizontal {
-        padding-left: 10px;
-    }
-
-    .destaque-banner{
-        /* width: 50%; */
-        max-height: 400px;
-        width: fit-content;
-        /* min-width: 438px; */
-        width: 90%;
-        left: 20px
-    }
-     
-    .destaque-banner h1, h2, h3 {
-        width: 100%;
-        font-size: 25px;
-    }
-
-    .destaque-banner p {
-        width: 100%;
-        font-size: 15px;
-    }
-
-    .section-banner-home .texto-banner h1 {
-        padding-top: 320px;
-        font-size: 35px;
-        width: 100%;
-    }
-    .section-banner-home .texto-banner h2 {
-        font-size: 20px;
-    }
-    .section-banner-home{
-        display: relative;
-        width: 100%;
-        
-    }
-
-    .section-banner-home .texto-banner p{
-        left: 10px;
-        font-size: 15px;
-        text-align: left;
+        padding-bottom: 10px;
     }
 
     .rodape{
         width: 100%;
         padding: 0;
+        left: 45px;
     }
+
 
 }
 
+@media screen and (min-width:768px){
+    .menu-header{
+        display: flex !important;
+    }
+}
 
+@media screen and (max-width: 1250px) and (min-width:768px){
+
+    .form_main{
+        /* width: 80%;
+        border-right: 10px;      
+        
+        justify-content: center; */
+        width: 60%;
+        margin-left: 5%;
+        margin-right: 10%;
+        /* margin-left: 5%;
+        margin-right: 35%; */
+        justify-content: center;
+    
+    }
+    
+    .form-horizontal {
+        padding-left: 10px;
+    }
+
+    .destaque-banner{
+        max-width: 420px;
+        max-height: 400px;
+        bottom: 50%;
+    }
+        
+    .destaque-banner h1, h2, h3 {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .destaque-banner p {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .section-banner-home .texto-banner h1 {
+        padding-top: 320px;
+        font-size: 35px;
+        width: 100%;
+    }
+    .section-banner-home .texto-banner h2 {
+        font-size: 20px;
+    }
+    .section-banner-home{
+        display: relative;
+    }
+
+    .section-banner-home .texto-banner p{
+        left: 10px;
+        font-size: 15px;
+        text-align: left;
+        padding-bottom: 10px;
+    }
+
+    .rodape{
+        width: 100%;
+        padding: 0;
+        left: 45px;
+    }
+    
+    
+
+}
