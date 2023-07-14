@@ -1,0 +1,304 @@
+/* inicio menu responsivo */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+                                              
+    background-color: #F2EBD5;
+}
+
+.container-grid{
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    z-index: 1;
+    background-color: #007566;
+    height: 80px;
+    position: relative;
+    width: 100vw;
+}
+
+.conteudo-header{
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.logo{
+    float: left;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+}
+
+.menu-header{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-header a{
+    color: #F2EBD5;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    transition: 0.3s;
+    /* font-family: 'Vogue', sans-serif;*/
+}
+
+.menu-header a:hover:not(.botao){
+    font-size: 1.6em;
+    text-shadow: 4px 4px 6px #0000007a;
+}
+
+.menu-header #font {
+    font-family: 'Vogue', sans-serif !important;
+}
+
+.botao{
+    background-color: #F2EBD5;
+    color: #007566 !important;
+    height: 45px;   
+    width: 150px;
+    text-align: center;
+    line-height: 47px;
+    font-size: 1.5em !important;
+    border: solid 2px #3f9489;
+    border-radius: 30px 10px;                                                
+}
+
+
+.botao:hover{
+    font-size: 1.6em !important;
+    height: 50px;
+    line-height: 50px;
+    width: 160px;
+    transition: 0.3s;
+    box-shadow: 4px 4px 6px #0000007a;
+}
+
+.menu-barras{
+    display: none;
+}
+
+/* .conteudo-header .fa-house{
+    background-color: #F2EBD5;
+} */
+/* fim menu responsivo */
+
+/* Início CSS Contato */
+.contato {
+    margin-top: 0px;
+    position: relative;
+}
+.form_main {
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 55%;
+    justify-content: center;
+}
+.form_main h4 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 26px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-family: 'Vogue', sans-serif;                                                
+}
+.text-left {
+    border-bottom: 1px solid #f2b84b;
+    padding-bottom: 9px;
+    position: relative;
+}
+.text-left p {
+    font-size: 30px;
+    font-weight: bolder;
+    padding-bottom: 9px;
+    position: relative;
+    font-family: 'Vogue', sans-serif;                                                
+}
+#text-local {
+    border-bottom: 1px solid #f2b84b;
+    margin-bottom: 9px;
+    position: relative;
+}
+.text-left span {
+    background: #f2b84b none repeat scroll 0 0;
+    bottom: -2px;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 130px;
+}
+.form-horizontal {
+    border-radius: 107px;
+    padding: 6px;
+    padding-left: 10px;
+}
+fieldset {
+    border: 0px;
+    border-style: none;
+}
+.form-control[type="text"] {
+    border: 1px solid black;
+    margin: 10px 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+    background-color: #f4f5fa;
+    font-family: 'Vogue', sans-serif;                                                
+}
+.form-control[type="email"] {
+    border: 1px solid black;
+    margin: 10px 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+    background-color: #f4f5fa;
+    font-family: 'Vogue', sans-serif;                                                
+}
+.form-control-msg[type="text"] {
+    border: 1px solid black;
+    margin: 10px 0 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+    background-color: #f4f5fa;
+    font-size: 14px;
+    font-family: 'Vogue', sans-serif;                                                
+}
+.formbutton[type="submit"] {
+    -moz-box-shadow: inset 0px 1px 0px 0px #87c0e6;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #87c0e6;
+    box-shadow: inset 0px 1px 0px 0px #87c0e6;
+    background-color: #297ee6;
+    display: inline-block;
+    border: 1px solid #2489d6;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 35px;
+    margin: 10px 0;
+    padding: 0;
+    text-transform: uppercase;
+    width: 30%;
+    font-family: 'Vogue', sans-serif;                                                
+}
+.formbutton:hover {
+    background-color: #31a1de;
+}
+.formbutton:active {
+    position: relative;
+    top: 1px;
+}
+.txt2:hover {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    color: #5793ef;
+    transition: all 0.5s ease 0s;
+}
+/* Fim CSS Contato */
+
+/* CSS Estilos Banner*/
+.section-banner-home {
+    width: 100%;
+    height: 590px;
+    margin-top: 100px;
+    padding: 0px;
+    background-color: #007566; 
+    background-repeat: no-repeat;
+    position: relative;
+}
+.section-banner-home .texto-banner h1 {
+    font-size: 60px;
+    width: 60%;
+    font-weight: 500;
+    color: white;
+    padding-left: 50px;
+    padding-top: 100px;
+    font-family: 'Vogue', sans-serif;
+}
+.section-banner-home .texto-banner p {
+    font-size: 1vw;
+    margin-bottom: 20px;
+    color: #f4f5fa;
+    text-align: left;
+    padding-left: 50px;
+    margin-top: 50px;
+    left: 10px;
+    font-family: 'Vogue', sans-serif;
+}
+.section-banner-home .texto-banner h2 {
+    font-size: 40px;
+    color: #f4f5fa;                                               
+    text-align: left;
+    padding-left: 50px;
+    font-weight: bolder;
+    font-family: 'Vogue', sans-serif;
+}
+/* Fim css estilos Banner */
+
+.destaque-banner {
+    position: absolute;
+    z-index: 50;
+    background-color: #f4f5fa;
+    bottom: 35%;
+    right: 5%;
+    box-shadow: 3px 3px 6px #0000007a;
+    width: 500px;
+    height: 500px;
+    border-left: 10px;
+
+}
+.destaque-banner h1, h2, h3 {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Vogue', sans-serif;                                    
+}
+.destaque-banner p {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Vogue', sans-serif;                                          
+}
+
+
+
+
+/* Início CSS Footer */
+.rodape {
+    padding: 120px 120px 0;
+    position: absolute;
+    background-color: #007566;
+    width: 100%;
+}
+.rodape .redes-sociais {
+    display: inline-block;
+}
+.rodape .redes-sociais img {
+    width: 50px;
+    height: 50px;
+    padding-left: 0;
+    /* margin-left: 0.7rem; */
+    transition: transform .3s;
+    border-radius: 15px; /* Arredondando div do objeto redes sociais*/
+}
+.rodape .redes-sociais img:hover {
+    z-index: 1;
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.446);
+}
+/* Fim CSS Footer */
+
+
