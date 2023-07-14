@@ -1,0 +1,990 @@
+body, ul {
+    margin: 0px;
+    padding: 0px;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Bebas Neue';
+}
+
+.container-grid{
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    z-index: 1;
+    background-color: #007566;
+    height: 80px;
+    position: relative;
+    width: 100vw;
+}
+
+.conteudo-header{
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.logo{
+    float: left;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 100px;
+}
+
+.menu-header{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-header a{
+    color: #F2EBD5;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    transition: 0.3s;
+}
+
+.menu-header a:hover:not(.botao){
+    font-size: 1.6em;
+    color: white;
+}
+.menu-header #font {
+    font-family: 'Bebas Neue', sans-serif !important;
+}
+
+.whatsapp{
+    position: fixed;
+    z-index: 2;
+    top: 200px;
+    right: 40px;
+}
+
+.whatsapp img{
+    height: 60px;
+}
+
+.botao{
+    background-color: #F2EBD5;
+    color: #007566 !important;
+    height: 45px;   
+    width: 150px;
+    text-align: center;
+    line-height: 47px;
+    font-size: 1.5em !important;
+    border: solid 2px #3f9489;
+    border-radius: 30px 10px;
+}
+
+
+.botao:hover{
+    font-size: 1.6em !important;
+    height: 50px;
+    line-height: 50px;
+    width: 160px;
+    transition: 0.3s;
+    box-shadow: 4px 4px 6px #0000007a;
+}
+
+.menu-barras{
+    display: none;
+}
+#menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+#menu a:hover {
+    color: #f2ebd5;
+    font-size: 1.6em; 
+}
+#logo img:hover {
+    box-shadow: 4px 4px 6px #f2ebd5;
+    transition: 0.3s;
+}
+#logo img {
+    float: left;
+    height: 55px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+#header {
+    width: 100%;
+    position: relative;
+    z-index: 90;
+    box-sizing: border-box;
+    height: 75px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #007566;
+}
+#header h1 {
+    font-size:'slabo 27px';
+    float: left;
+    padding-left: 10px;
+    color: #f2ebd5;
+}
+.header figcaption {
+    font-family: 'Bebas Neue';
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    color: #007566;
+    font-size: 35px;
+}
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+}
+#btn-mobile {
+    display: none;
+}
+/*
+.carousel-inner .carousel-item img {
+    width: 100%;
+    margin: auto;
+    max-height: 500px;
+    padding-top: 85px;
+}
+*/
+
+
+#carouselExampleInterval {
+    position: relative;
+    z-index: 10;
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    box-shadow: 6px 6px 6px #0000007a;
+    transition: 0.3s;
+    width: 100%;
+    display: inline-flex;
+    
+}
+#carouselExampleInterval img {
+    max-height: 550px;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    #menu {
+        display: block;
+        position: absolute;
+        width: 15em;
+        top: 70px;
+        right: 0px;
+        background: #e7e7e7;
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0px;
+        padding-left: 5px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #menu li {
+        padding-top: 30px;
+        padding-bottom: 0px;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: hidden;
+    }
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+    }
+    #hamburger {
+        border-top: 2px solid; /* Melhorando  hamburger >> Espessura da linha  */
+        width: 30px; /* Alterando a Largura do hamburger */
+        color: #000102; /* Alterando a cor do hamburger */
+    }
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 30px; /* Alterando a Largura do hamburger */
+        height: 2px;
+        background: currentColor;
+        margin-top: 4px; /* Altera o espaçamento entre o hamburger */
+        position: relative;
+        border-top: 2px solid; /* Melhorando  hamburger >> Espessura da linha  */
+    }
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+/* CSS Estilos Banner */
+.section-banner-home {
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+    padding: 0px;
+    background-color: #ca987b;
+}
+.section-banner-home img {
+    height: 400px;
+    width: auto;
+}
+.section-banner-home .texto-banner {
+    margin-top: 30px;
+    font-size: 22px;
+}
+.section-banner-home .texto-banner h1 {
+    font-size: 30px;
+    width: 60%;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.section-banner-home .texto-banner p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.section-banner-home .texto-banner a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color:#fff;
+    padding: 4px 14px;
+    font-size: 15px;
+}
+/* Fim css estilos Banner */
+
+/* Início css destaque */
+
+.destaque h2 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.destaque p {
+    width: 77%;
+    text-align: center;
+    font-size: 14px;
+    margin: 30px auto;
+}
+.destaque figcaption {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+.destaque a {
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    color: #007566;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 30px 0;
+}
+.destaque a:hover {
+    color: #095313;
+    font-size: 24px;
+    transition: 0.3s;
+    text-shadow: 4px 4px 6px #862c2c7a;
+}
+.destaque img {
+    height: 250px;
+    width: 250px;
+}
+/* Fim do CSS Destaque */
+
+/* Início CSS Novidades */
+
+.novidades .text-boby {
+    width: 80%;
+    margin: 70px auto;
+}
+
+.novidades h2 {
+    color: #000000;
+}
+
+.novidades p {
+    color: #000000;
+}
+
+.novidades a {
+    color: beige;
+    text-decoration: underline;
+    text-decoration-color: rgb(141, 2, 2);
+    padding: 6px 12px;
+    background-color: #800000;
+    font-weight: 400;
+}
+
+/* Fim CSS Novidades */
+/* Início CSS Galeria */
+
+.galeria {
+    margin: 60px auto 20px;
+    /* Quando tivermos 4 valores no margin = top / right / botton / left
+    >  Ex: margin: 60px 60px 60px 60px; 
+       Quando tivermos 3 valores = top / right and left / botton
+    >  Ex: margin 60px auto 60px;
+       Quando tivermos 2 valores = top and botton / right and left
+    >  Ex: margin 60px 30px
+       Quando tivermos 1 valor = top and botton and right and left 
+    >  Ex: margin 60px;
+    >> Essa regra vale também para padding. << 
+    */
+}
+.galeria .container {
+    margin-left: 11%;
+}
+
+.galeria h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.galeria p {
+    text-align: center;
+    width: 50%;
+    margin: 14px auto 50px;
+}
+
+.galeria .gallery { 
+    width: 30%;
+    margin: 14px auto 50px;
+}
+.galeria .gallery img {
+    width: 120%;
+    height: 120%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    display: block;
+}
+.galeria .gallery img:hover {
+    -webkit-transform:scale(1.3);
+    transform: scale(1.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+/* Fim CSS Galeria */
+
+/* Início CSS Footer */
+
+.rodape {
+    padding: 50px 50px 0;
+    background-color: #007566;
+}
+.rodape .container #img-logo {
+    height: 50%;
+    width: 50%;
+    padding-left: 10px;
+    transition:transform .3s;
+    display: block;
+}
+.rodape .container #img-logo:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgb(255, 255, 255, 0.2) ;
+}
+.rodape .info-contato p {
+    margin: 0;
+}
+.rodape a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 13px;
+}
+.rodape a:hover {
+    font-weight: bold;
+}
+.rodape .redes-sociais {
+    display: inline-block;
+}
+.rodape .redes-sociais img {
+    width: 50px;
+    height: 50px;
+    padding-left: 0;
+    margin-left: 0,7rem;
+    transition: trasform .3s;
+    border-radius: 15px; /* Arredondando div do objeto redes sociais */
+} 
+.rodape .redes-sociais img:hover {
+    z-index: 1;
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.446);
+}
+.rodape p.direitos {
+    text-align: center;
+    margin-top: 40px;
+}
+/* Fim CSS Footer */
+
+/* Início CSS Streaming */
+.embed-container {
+    position: relative;
+    padding-bottom: 0;
+    height: auto;
+    max-width: 100%;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    padding-top: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+}
+.embed-container p {
+    text-align: center;
+    font-size: 20px;
+}
+.embed-container h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.embed-container iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    border-radius: 1em;
+    box-shadow: gray 0.5em 0.5em 0.5em;
+    transition: transform .3s;
+    display: flex;
+}
+.embed-container iframe:hover {
+    flex: 1;
+    z-index: 1;
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0,0,0,0.446);
+}
+.embed-container .col-lg-4 {
+    margin-top: 30px;
+}
+.embed-container .col-lg-6 {
+    margin-top: 20px;
+}
+/* Fim CSS Streaming */
+
+/* início CSS Contato */
+.contato {
+    margin-top:50px;
+}
+.form_main {
+    width: 100%;
+
+} 
+.form_main h4 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 17px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.text-left {
+    border-bottom: 1px solid #ff0000;
+    padding-bottom: 9px;
+    position: relative;   
+   
+}
+.text-local {
+    border-bottom: 1px solid #ff0000;
+    margin-bottom: 9px;
+    position: relative;   
+   
+}
+.text-left span {
+    background: #9c0303 none repeat scroll;
+    bottom: -2px;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 130px;
+}
+.form-horizontal {
+    border-radius: 107px;
+    padding: 6px;
+}
+.form-control[type="text"] {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+.form-control[type="email"] {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+.form-control-msg[type="text"] {
+    margin: 10px 0 0;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+}
+.formbutton[type="submit"] {
+    -moz-box-shadow:inset 0px 1px 0px 0px #87c0e6;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #87c0e6;
+    box-shadow: inset 0px 1px 0px 0px #87c0e6;
+    background-color: #062b44;
+    display: inline-block;
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-style: none;
+    line-height: 35px;
+    margin: 10px 0;   
+    text-transform: uppercase;
+    width: 30%;
+}
+.formbutton:hover{
+    background-color: #2f5168;
+}
+.formbutton:active {
+    position: relative;
+    top: 1px;
+}
+.txt2:hover {
+    background: rgba(0,0,0,0) none repeat scroll 0 0;
+    color: #062b44;
+    transition: all 0.5s ease 0s;
+}
+
+
+/* Fim CSS Contato */
+/* Início CSS Mapa */
+.map {
+    width: 100%;
+    height: 500px;
+}
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+/* Fim CSS Mapa */
+
+/* Início Whatsapp */
+.whatsapp {
+    position: fixed;
+    z-index: 2;
+    top: 200px;
+    right: 20px;
+}
+.whatsapp img {
+    height: 60px;
+}
+
+/* Inicio Efeito Pulse */
+
+.whatsapp .pulando {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    animation: pulando .4s cubic-bezier(.53, -0.03, .67, 1.06);
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@-webkit-keyframes pulse {
+    0% {
+        -webkit-transform: scale(1);
+        -webkit-filter: brightness(100%)        
+    }
+    100% {
+        -webkit-transform: scale(1.1);
+        -webkit-filter: brightness(110%);
+    }
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        filter: brightness(100%);
+    }
+    100% {
+        transform: scale(1.1);
+        filter: brightness(110%);   
+    }
+}
+/* Fim Efeto Pulse */
+
+/* Fim Whatsapp */
+
+/* Início CSS Card Produtos */
+
+.text-center .mb-5 {
+    margin-top: 20px;
+}
+ .card img {    
+    height: auto;
+    width: 100%;
+ }
+ .bg-image {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+ }
+
+ .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+ }
+.hover-overlay .mask {
+    opacity: 0;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .4s ease-in-out;    
+}
+.hover-overlay .mask:hover {
+    opacity: 1;
+}
+
+/* Fim CSS Card Produtos */
+
+/*Estrutura do Site*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+
+	font-family: "Trebuchet MS" Helvetica, sans-serif;
+	background: #fff url(../imagens/fundo.png) repeat-x;
+}
+
+#container {
+	width: 750px;
+	margin: 0 auto;
+
+}
+
+#topo {
+	height: 150px;
+	background: url(../imagens/detalhe-topo.png) no-repeat right top;
+	padding-top: 25px;
+	
+}
+
+.logo {
+	width: 70px;
+	height: 70px;
+	background: url(../imagens/logo.png)no-repeat center;
+	text-indent: -3000px;
+}
+
+/*Barra de navegação*/
+
+ul{
+
+	margin: 50;
+	padding: 50;
+	list-style: none;
+}
+
+#topo ul {
+	margin-top: 30px;
+	background: #116918;
+	float: left;
+
+}
+
+#topo ul li {
+	float: left;
+}
+
+#topo ul a {
+
+	font-size: 0.9em;
+	display: block;
+	padding: 0.5em 1.5em;
+	line-height: 2.1em;
+	text-decoration: none;
+	color: #fff;
+	background: url(../imagens/divisor.png) no-repeat left center;
+
+}
+
+#topo ul .primeiro a {
+	background: none;
+}
+
+#topo ul a:hover {
+	color: #007566;
+}
+
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.fotos #navegacao a#fotos {
+
+	color: #fff;
+	background: #007566;
+	cursor: text;
+}
+
+/*Configura layout de três colunas */
+.news {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    height: auto;
+}
+#conteudo {
+	margin-top: 60px;
+	background: #007566;
+
+}
+
+#lateral {
+	width: 200px;
+	float: left;
+	margin: 0 0 20px -725px;
+    left: 100px;
+
+}
+
+
+#primario {  
+	width: 700px;
+	float: left;
+	margin: 0 0 5% 5%;	
+
+}
+
+#duas-colunas #primario {
+    padding-top: 700px;
+	width: 555px;
+	
+}
+
+#uma-coluna #primario {
+	width: 700px;
+	margin: 0 0 20px 50px; 
+	
+}
+#secundario {
+	width: 700px;
+	float: left;
+	margin: 0 0 5% 5%;
+    position: relative;	    
+}
+
+.conteudo-mundo {
+	margin: 10px 0;
+	padding: 2px 0;
+	background: #f3f3f3;
+}
+.conteudo-paris {
+	margin: 10px 0;
+	padding: 2px 0;
+	background: #f3f3f3;
+}
+ 
+ h2 {
+ 	font-size: 1.1em;
+ 	background: #007566;
+ 	color: #fff;
+ 	padding: 2px;
+ }
+
+ .caixa-conteudo {
+ 	background: #fff;
+ 	padding: 5px;
+ 	margin-top: 5px; 
+    display: flex;
+    align-items: left;
+    justify-content: left;
+ }
+/*Formatar menus laterais*/
+
+#lateral ul a {
+font-size: 0.9em;
+padding: 3px;
+display: block;
+line-height: 30px;
+color: #000;
+text-decoration: none;
+border-bottom: 2px solid #f3f3f3;
+
+}
+
+#lateral ul a:hover {
+	background: #f9f9f9 url(../imagens/marcador.png) no-repeat left center;
+	padding-left: 20px;
+	color: #a1a1a1;
+}
+/*Formatando formularios*/
+
+label {
+	display: block;
+	cursor: pointer;
+	background-color: #fff;
+	font-size: 0.9em;
+	width: 150px;
+
+}
+
+input {
+	margin:30px;
+	border-color: lightblue;
+	
+}
+
+.submit {
+	width: 80px;
+	background-color:#007566;
+	color: beige;
+	border: 2px solid #007566;
+
+}
+/*Formatação Imagens*/
+
+img {
+border: 2px solid #dfdfdf;
+
+}
+img.imagem-principal {
+	width: 700px;
+	border: 3px solid #dfdfdf;
+	margin-top: 3px;
+}
+/*Formatação Cabeçalhos*/
+
+h3 {
+	text-transform: uppercase;
+	display: inline;
+	font-size: 0.9em;
+	padding: 5px;
+	background: #b10333;
+	color: #fff;
+
+}
+
+
+/*Formatando lista noticias*/
+
+#lista-noticias li {
+	padding: 10px;
+	border-bottom: 3px solid #ccc;
+	height: 100px;
+	
+}
+
+#lista-noticias li a img {
+	float: left;
+	margin: 1px;
+    height: 80px;
+    width: 80px;
+}
+
+#lista-noticias li h3 {
+background: #fff;
+font-size: 0.8em;
+padding: 10px;
+color: #3e7ab9;
+
+}
+
+#lista-noticias li p {
+font-size: 0.7em;
+}
+
+#lista-noticias li:hover {
+background: #eee;
+cursor: pointer;
+}
+
+
+/* Início CSS Footer */
+footer {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.rodape {
+    padding: 50px 50px 0;
+}
+.rodape .container #img-logo {
+    height: 150px;
+    width: 150px;
+    padding-left: 10px;
+    transition:transform .3s;
+    display: block;
+}
+.rodape .container #img-logo:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgb(255, 255, 255, 0.2) ;
+}
+.rodape .info-contato p {
+    margin: 0;
+}
+.rodape a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 13px;
+}
+.rodape a:hover {
+    font-weight: bold;
+}
+.rodape .redes-sociais {
+    display: inline-block;
+}
+.rodape .redes-sociais img {
+    width: 50px;
+    height: 50px;
+    padding-left: 0;
+    margin-left: 0,7rem;
+    transition: trasform .3s;
+    border-radius: 15px; /* Arredondando div do objeto redes sociais */
+} 
+.rodape .redes-sociais img:hover {
+    z-index: 1;
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.446);
+}
+.rodape p.direitos {
+    text-align: center;
+    margin-top: 40px;
+}
+/* Fim CSS Footer */
