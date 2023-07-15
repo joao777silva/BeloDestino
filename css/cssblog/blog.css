@@ -292,11 +292,11 @@ header{
 .destaque p {
     width: 77%;
     text-align: center;
-    font-size: 14px;
+    font-size: 20px;
     margin: 30px auto;
 }
 .destaque figcaption {
-    font-size: 15px;
+    font-size: 20px;
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: bold;
@@ -837,13 +837,13 @@ body.fotos #navegacao a#fotos {
 /*Formatar menus laterais*/
 
 #lateral ul a {
-font-size: 0.9em;
-padding: 3px;
-display: block;
-line-height: 30px;
-color: #000;
-text-decoration: none;
-border-bottom: 2px solid #f3f3f3;
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 2px solid #f3f3f3;
 
 }
 
@@ -879,7 +879,7 @@ input {
 /*Formatação Imagens*/
 
 img {
-border: 2px solid #dfdfdf;
+    border: 2px solid #dfdfdf;
 
 }
 img.imagem-principal {
@@ -912,25 +912,26 @@ h3 {
 #lista-noticias li a img {
 	float: left;
 	margin: 1px;
-    height: 80px;
-    width: 80px;
+    height: 85px;
+    width: 100px;
 }
 
 #lista-noticias li h3 {
-background: #fff;
-font-size: 0.8em;
-padding: 10px;
-color: #3e7ab9;
+    background: #fff;
+    font-size: 0.8em;
+    padding: 10px;
+    color: #3e7ab9;
 
 }
 
 #lista-noticias li p {
-font-size: 0.7em;
+    font-size: 0.7em;
+    font-size: 12px;
 }
 
 #lista-noticias li:hover {
-background: #eee;
-cursor: pointer;
+    background: #eee;
+    cursor: pointer;
 }
 
 
