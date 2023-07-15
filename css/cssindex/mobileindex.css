@@ -38,12 +38,21 @@
         height: unset;
     }
 
- 
+    .info{
+        display: flex;
+        position: relative;
+        height: auto;
+        width: 100%;
+    }
+
     .conteudo-info{
         display: flex;
         flex-direction: column;
+        margin-left: 20%;
+        margin-right: 20%;
         align-items: center;
         height: 660px;
+        width: 70%;
         justify-content: space-between;
     }
 
@@ -52,16 +61,18 @@
         align-items: center;
     }
 
-    .destaque{
+    .destaque {
         display: flex;
+        position: relative;
         flex-direction: column;
-        height: 1600px;
+        height: 1000px;
+        width: 100%;
         align-items: center;
     }
 
     .texto-destaque{
         margin-top: 8px;
-        width: 100%;
+        width: 90%;
         height: 100%;
     }
 
