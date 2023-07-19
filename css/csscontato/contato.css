@@ -24,6 +24,7 @@ header{
     height: 80px;
     position: relative;
     width: 100vw;
+    box-shadow: 4px 4px 6px #0000007a;
 }
 
 .conteudo-header{
@@ -65,6 +66,17 @@ header{
 
 .menu-header #font {
     font-family: 'Vogue', sans-serif !important;
+}
+
+.whatsapp{
+    position: fixed;
+    z-index: 2;
+    top: 200px;
+    right: 40px;
+}
+
+.whatsapp img{
+    height: 60px;
 }
 
 .botao{
@@ -155,7 +167,8 @@ fieldset {
     padding: 10px 0 10px 5px;
     width: 100%;
     background-color: #f4f5fa;
-    font-family: 'Vogue', sans-serif;                                                
+    font-family: 'Vogue', sans-serif;    
+    box-shadow: 4px 4px 6px #0000007a ;                                            
 }
 .form-control[type="email"] {
     border: 1px solid black;
@@ -163,7 +176,8 @@ fieldset {
     padding: 10px 0 10px 5px;
     width: 100%;
     background-color: #f4f5fa;
-    font-family: 'Vogue', sans-serif;                                                
+    font-family: 'Vogue', sans-serif;
+    box-shadow: 4px 4px 6px #0000007a ;                                              
 }
 .form-control-msg[type="text"] {
     border: 1px solid black;
@@ -172,7 +186,8 @@ fieldset {
     width: 100%;
     background-color: #f4f5fa;
     font-size: 14px;
-    font-family: 'Vogue', sans-serif;                                                
+    font-family: 'Vogue', sans-serif;
+    box-shadow: 4px 4px 6px #0000007a ;                                              
 }
 .formbutton[type="submit"] {
     -moz-box-shadow: inset 0px 1px 0px 0px #87c0e6;
@@ -190,7 +205,8 @@ fieldset {
     padding: 0;
     text-transform: uppercase;
     width: 30%;
-    font-family: 'Vogue', sans-serif;                                                
+    font-family: 'Vogue', sans-serif;
+    box-shadow: 4px 4px 6px #0000007a;                                         
 }
 .formbutton:hover {
     background-color: #31a1de;
@@ -209,12 +225,13 @@ fieldset {
 /* CSS Estilos Banner*/
 .section-banner-home {
     width: 100%;
-    height: 590px;
+    height: 630px;
     margin-top: 100px;
     padding: 0px;
     background-color: #007566; 
     background-repeat: no-repeat;
     position: relative;
+    
 }
 .section-banner-home .texto-banner h1 {
     font-size: 60px;
@@ -280,14 +297,23 @@ fieldset {
     background-color: #007566;
     width: 100%;
 }
+.rodape a{
+    text-decoration: none;
+    color:#F2EBD5;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.rodape a:hover{
+    font-weight: bold;
+}
 .rodape .redes-sociais {
     display: inline-block;
 }
 .rodape .redes-sociais img {
-    width: 50px;
-    height: 50px;
-    padding-left: 0;
-    /* margin-left: 0.7rem; */
+    width: 60px;
+    height: 60px;
+    padding: 5px;
     transition: transform .3s;
     border-radius: 15px; /* Arredondando div do objeto redes sociais*/
 }
