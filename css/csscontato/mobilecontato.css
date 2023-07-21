@@ -19,6 +19,11 @@
         color: white;
         font-size: 30px;
     }
+
+    .whatsapp {
+        top: 100px;
+        right: 20px;
+    }
     
     .form_main{
         width: 80%;
@@ -62,6 +67,7 @@
     }
     .section-banner-home{
         display: relative;
+        
     }
 
     .section-banner-home .texto-banner p{
